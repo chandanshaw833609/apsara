@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lobster+Two&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main_color : purple;
+    --bold_color : rgb(165, 22, 165);
+}
+
+
+.background{
+    height: 100vh; 
+    width: 100%;
+    background-image: url("https://www.theluxestudio.co.uk/wp-content/uploads/2020/02/HomePage-1.jpg");
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#first{
+    padding: 0 2.5rem;
+    font-family: 'Lobster Two', cursive;
+    font-size: 2.5rem;
+    color: var(--main_color);
+}
+
+#second{
+    font-size: 2rem;
+    padding: 1rem 7rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+#third{
+    padding: 0 1rem;
+    font-family: 'Lobster Two', cursive;
+    font-size: .5rem;
+    color: var(--main_color);
+}
+
+.background button{
+    width:120px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--bold_color);
+    color: white;
+    margin-left: 10rem;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+
+@media(max-width:500px){
+    .background{
+        height: 30vh; 
+    }
+
+    #first{
+        padding: 0 1.5rem;
+        font-family: 'Lobster Two', cursive;
+        font-size: 1rem;
+        color: var(--main_color);
+    }
+    
+    #second{
+        font-size: 1rem;
+        padding: 1rem 2.5rem;
+        font-family: 'Dancing Script', cursive;
+    }
+    
+    #third{
+        padding: 0 .5rem;
+        font-family: 'Lobster Two', cursive;
+        font-size: 1rem;
+        color: var(--main_color);
+    }
+    .background button{
+        width:90px;
+        border-radius: 20px;
+        background-color: var(--bold_color);
+        color: white;
+        margin-left:2.5rem;
+        margin-top: 10px;
+        font-size: smaller;
+        padding: 3px;
+    }
+}
+
+
+
+/* services starts here */
+
+.services h2{
+    text-align: center;
+    color: purple;
+    font-size: 45px;
+    padding-top: 20px;
+    margin: 30px;
+}
+.main-services{
+    display: flex;
+    flex-direction: column;
+}
+.main-services .row{
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 30px;
+    padding: 5px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: lightpink;
+}
+
+.main-services .row .col img{
+    object-fit: cover;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.main-services .row .col p{
+    text-align: center;
+}
+
+@media(max-width:500px){
+    .services{
+        border-top: 1px solid lightpink;
+        margin-bottom: 5px;
+    }
+    .services h2{
+        text-align: center;
+        color: purple;
+        font-size: 40px;
+        padding-top: 0px;
+        margin: 10px;
+        padding: 5px;
+    }
+    .main-services{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-services .row{
+        display: flex;
+        justify-content: space-around;
+        margin: 7.5px 15px;
+        padding: 5px;
+        padding-top: 10px;
+        padding-bottom: 0px;
+        border-radius: 20px;
+        height: 165px;
+        align-items: center;
+    }
+    
+    .main-services .row .col img{
+        object-fit: cover;
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+    
+    .main-services .row .col p{
+        text-align: center;
+        width: 100px;
+        color: black;
+    }
+}
+
+/* services ends here */
+
+
+
+#features{
+    height: 100vh;
+    color: purple;
+}
+
+#features-heading{
+    height: 25%;
+    margin-bottom: 15px;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-features{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0px 100px;
+}
+
+.feature{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-image {
+    background-image: url("https://images.unsplash.com/photo-1589710751893-f9a6770ad71b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHNhbG9uJTIwc2hvcHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60");
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid black;
+    box-shadow: 5px 10px 8px purple;
+}
+.feature-1{
+    display: flex;
+}
+.feature-1 .logo{
+    font-size: 40px;
+    margin: 13px 0px;
+    color: black;
+    padding: 5px;
+}
+
+.logo-feature{
+    padding: 15px;
+    color: black;
+}
+
+.row h2{
+    font-size: 35px;
+}
+
+@media(max-width:500px) {
+    #features{
+        height: auto;
+        color: purple;
+    }
+    #features-heading{
+        height: 25%;
+        margin: 25px 0;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-features{
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px;
+    }
+    
+    .feature{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .features-image {
+        background-image: url("https://images.unsplash.com/photo-1589710751893-f9a6770ad71b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHNhbG9uJTIwc2hvcHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60");
+        object-fit: cover;
+        height: 0vh;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 5px 10px 8px purple;
+    }
+    .feature-1{
+        display: flex;
+    }
+    .feature-1 .logo{
+        font-size: 30px;
+        margin: 13px 0px;
+        color: black;
+        padding: 5px;
+    }
+    
+    .logo-feature{
+        padding: 15px;
+        color: black;
+    }
+    
+    .row h2{
+        font-size: 25px;
+    }
+}
