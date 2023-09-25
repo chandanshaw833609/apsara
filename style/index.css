@@ -109,7 +109,7 @@
     margin-top: 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 10px black;
-    padding-top: 5px;
+    padding-top: 1px;
 }
 
 .services h2{
@@ -124,14 +124,10 @@
 .main-services{
     display: flex;
     flex-direction: column;
-    
 }
 .main-services .row{
     display: flex;
     justify-content: space-around;
-    margin: 5px 30px;
-    padding: 5px;
-    padding: 10px;
     border-radius: 20px;
 }
 
@@ -140,8 +136,6 @@
     background-size: cover;
     height: 150px;
     width: 150px;
-    border-radius: 50%;
-    box-shadow: 1px 1px 10px black;
 }
 
 .main-services .row .col p{
@@ -166,26 +160,29 @@
     .main-services .row{
         display: flex;
         justify-content: space-around;
-        margin: 7.5px 15px;
-        padding: 5px;
-        padding-top: 10px;
-        padding-bottom: 0px;
         border-radius: 20px;
-        height: 165px;
         align-items: center;
+    }
+
+    .main-services .row .col{
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 10px;
+        box-shadow: 1px 1px 10px black;
     }
     
     .main-services .row .col img{
         object-fit: cover;
         background-size: cover;
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
+        height: 150px;
+        width: 150px;
     }
     
     .main-services .row .col p{
         text-align: center;
-        width: 100px;
+        width: 150px;
+        margin-top: 5px;
     }
 }
 
