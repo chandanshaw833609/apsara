@@ -17,7 +17,7 @@
 .background{
     height: 100vh; 
     width: 100%;
-    background-image: linear-gradient(to right, rgba(170, 22, 22, 0.589), rgba(193, 47, 115, 0.87)),url("https://images.unsplash.com/photo-1579734204067-c337a611376c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80");
+    background-image: linear-gradient(to right, rgba(170, 22, 22, 0.589), rgba(193, 47, 115, 0.87)),url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZzkCBuWAgBw0GDJkKQJCq5yb3XwxBo5E7MPgol7xQ-8YBdjD1lp9bTTq0a3mRo0MUguM&usqp=CAU");
     background-size: cover;
     background-position: center;
     object-fit: cover;
