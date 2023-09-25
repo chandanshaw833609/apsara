@@ -63,7 +63,7 @@
 
 @media(max-width:500px){
     .background{
-        height: 100vh;
+        height: 90vh;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
     }
