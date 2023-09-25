@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script:wght@500&family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script:wght@500&family=Lobster+Two&family=Tilt+Prism&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -15,17 +17,18 @@
 .background{
     height: 100vh; 
     width: 100%;
-    background-image: url("https://www.theluxestudio.co.uk/wp-content/uploads/2020/02/HomePage-1.jpg");
+    background-image: linear-gradient(to right, rgba(170, 22, 22, 0.589), rgba(193, 47, 115, 0.87)),url("https://images.unsplash.com/photo-1579734204067-c337a611376c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80");
     background-size: cover;
     background-position: center;
     object-fit: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-shadow: 3px 5px 10px black;
 }
 #first{
     padding: 0 2.5rem;
-    font-family: 'Lobster Two', cursive;
+    font-family: 'Tilt Prism', cursive;
     font-size: 2.5rem;
     color: var(--main_color);
 }
@@ -46,48 +49,53 @@
 .background button{
     width:120px;
     padding: 10px;
-    border-radius: 20px;
-    background-color: var(--bold_color);
+    border-radius: 80px;
+    border-color: transparent;
+    box-shadow: 2px 2px 10px white;
     color: white;
     margin-left: 10rem;
     margin-top: 20px;
     font-size: 1rem;
+    font-family: 'Lobster Two', cursive;
+    background: linear-gradient(to right, rgba(170, 22, 22, 0.589), rgba(193, 47, 115, 0.87));
 }
 
 
 @media(max-width:500px){
     .background{
-        height: 30vh; 
+        height: 65vh;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
-
+    
     #first{
-        padding: 0 1.5rem;
-        font-family: 'Lobster Two', cursive;
-        font-size: 1rem;
-        color: var(--main_color);
+        font-family: 'Tilt Prism', cursive;
+        font-size: 2rem;
+        color: black;
+        text-align: center;
+        font-weight: 900;
     }
     
     #second{
-        font-size: 1rem;
-        padding: 1rem 2.5rem;
+        font-size: 1.8rem;
+        text-align: center;
         font-family: 'Dancing Script', cursive;
     }
     
     #third{
-        padding: 0 .5rem;
-        font-family: 'Lobster Two', cursive;
-        font-size: 1rem;
-        color: var(--main_color);
+        font-family: 'Tilt Prism', cursive;
+        font-size: 2rem;
+        color: black;
+        text-align: center;
     }
     .background button{
-        width:90px;
-        border-radius: 20px;
-        background-color: var(--bold_color);
+        width:210px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: rgb(163, 42, 99);
         color: white;
-        margin-left:2.5rem;
-        margin-top: 10px;
-        font-size: smaller;
-        padding: 3px;
+        margin: 10px auto;
+        font-size: 1.5rem;
     }
 }
 
@@ -97,10 +105,14 @@
 
 .services h2{
     text-align: center;
+    border: 1px solid black;
+    border-radius: 50px;
     color: purple;
     font-size: 45px;
     padding-top: 20px;
     margin: 30px;
+    font-family: 'Dancing Script', cursive;
+    box-shadow: 3px 3px 10px black;
 }
 .main-services{
     display: flex;
@@ -113,7 +125,8 @@
     padding: 5px;
     padding: 10px;
     border-radius: 20px;
-    background-color: lightpink;
+    box-shadow: 3px 3px 10px black;
+    background: linear-gradient(to right, rgba(170, 22, 22, 0.589), rgba(193, 47, 115, 0.87));
 }
 
 .main-services .row .col img{
@@ -122,10 +135,12 @@
     height: 150px;
     width: 150px;
     border-radius: 50%;
+    box-shadow: 1px 1px 12px black;
 }
 
 .main-services .row .col p{
     text-align: center;
+    font-family: 'Lobster Two', cursive;
 }
 
 @media(max-width:500px){
@@ -135,11 +150,11 @@
     }
     .services h2{
         text-align: center;
-        color: purple;
-        font-size: 40px;
-        padding-top: 0px;
-        margin: 10px;
+        color: black;
+        font-size: 30px;
+        margin: 18px 13px 10px 13px;
         padding: 5px;
+        background: linear-gradient(to right, rgba(170, 22, 22, 0.589), rgba(193, 47, 115, 0.87));
     }
     .main-services{
         display: flex;
