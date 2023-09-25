@@ -126,7 +126,7 @@
     padding: 10px;
     border-radius: 20px;
     box-shadow: 3px 3px 10px black;
-    background: linear-gradient(to right, rgba(170, 22, 22, 0.589), rgba(193, 47, 115, 0.87));
+    background: linear-gradient(to left, rgba(170, 22, 22, 0.589), rgba(193, 47, 115, 0.87));
 }
 
 .main-services .row .col img{
