@@ -103,20 +103,28 @@
 
 /* services starts here */
 
+.services{
+    background: linear-gradient(to right, rgba(170, 22, 22, 0.589), rgba(193, 47, 115, 0.87));
+    border: 1px solid black;
+    margin: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+}
+
 .services h2{
     text-align: center;
-    border: 1px solid black;
     border-radius: 50px;
     color: purple;
     font-size: 45px;
     padding-top: 20px;
     margin: 30px;
     font-family: 'Dancing Script', cursive;
-    box-shadow: 3px 3px 10px black;
 }
 .main-services{
     display: flex;
     flex-direction: column;
+    
 }
 .main-services .row{
     display: flex;
@@ -125,8 +133,6 @@
     padding: 5px;
     padding: 10px;
     border-radius: 20px;
-    box-shadow: 3px 3px 10px black;
-    background: linear-gradient(30deg, rgba(170, 22, 22, 0.589), rgba(193, 47, 115, 0.87));
 }
 
 .main-services .row .col img{
@@ -144,7 +150,7 @@
 }
 
 @media(max-width:500px){
-   
+    
     .services h2{
         text-align: center;
         color: black;
@@ -187,7 +193,7 @@
 
 
 
-#features{
+/* #features{
     height: 100vh;
     color: purple;
 }
@@ -241,9 +247,9 @@
 
 .row h2{
     font-size: 35px;
-}
+} */
 
-@media(max-width:500px) {
+/* @media(max-width:500px) {
     #features{
         height: auto;
         color: purple;
@@ -297,7 +303,9 @@
     .row h2{
         font-size: 25px;
     }
-}
+} */
+
+
 
 
 .contact-details{
@@ -305,7 +313,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    margin: 10px;
+    margin: 15px;
 }
 .contact-details .details{
     width: 40%;
@@ -315,13 +323,14 @@
 
 .contact-details .details h2{
     text-align: center;
-    box-shadow: none;
-    margin: 10px auto;
-    margin-bottom: 15px;
-    border-radius: 0px;
-    background-color:transparent;
-    border: none;
+    color: black;
+    font-size: 30px;
+    margin: 18px 13px 10px 13px;
+    padding: 5px;
+    background: linear-gradient(to right, rgba(170, 22, 22, 0.589), rgba(193, 47, 115, 0.87));
     border-radius: 50px;
+    margin: 10px auto;
+    font-family: 'Dancing Script', cursive;
 }
 .contact-details .details p{
     padding: 5px;
@@ -349,11 +358,11 @@
     .contact-details{
         flex-direction: column;
         padding: 10px;
-        border: none;
         background: linear-gradient(to right, rgba(170, 22, 22, 0.589), rgba(193, 47, 115, 0.87));
         border-radius: 10px;
         box-shadow: 2px 2px 10px black;
-        margin: 15px;
+        margin: 10px;
+        margin-top: 20px;
     }
     .contact-details .details{
         width: 100%;
