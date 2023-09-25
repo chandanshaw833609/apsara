@@ -298,3 +298,71 @@
         font-size: 25px;
     }
 }
+
+
+.contact-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+}
+.contact-details .details{
+    width: 40%;
+    font-family: 'Solway', serif;
+    border: 1px solid black;
+}
+
+.contact-details .details h2{
+    text-align: center;
+    box-shadow: none;
+    margin: 10px auto;
+    margin-bottom: 15px;
+    border-radius: 0px;
+    background-color:transparent;
+    border: none;
+    border-radius: 50px;
+}
+.contact-details .details p{
+    padding: 5px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.contact-details .map{
+   width: 50%;
+   height:70vh;
+}
+.contact-details .map iframe{
+    width: 100%;
+    height:100%;
+ }
+ .contact-details .details p i{
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 50%;
+    margin-right: 10px;
+   }
+
+ 
+@media(max-width:500px){
+
+    .contact-details{
+        flex-direction: column;
+        padding: 10px;
+        border: none;
+        background: linear-gradient(to right, rgba(170, 22, 22, 0.589), rgba(193, 47, 115, 0.87));
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px black;
+        margin: 15px;
+    }
+    .contact-details .details{
+        width: 100%;
+        border: none;
+        margin-bottom: 10px;
+    }
+    
+    .contact-details .map{
+        width: 100%;
+        height: 40vh;
+    }
+}
