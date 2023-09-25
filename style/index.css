@@ -126,7 +126,7 @@
     padding: 10px;
     border-radius: 20px;
     box-shadow: 3px 3px 10px black;
-    background: linear-gradient(to left, rgba(170, 22, 22, 0.589), rgba(193, 47, 115, 0.87));
+    background: linear-gradient(30deg, rgba(170, 22, 22, 0.589), rgba(193, 47, 115, 0.87));
 }
 
 .main-services .row .col img{
@@ -135,7 +135,7 @@
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    box-shadow: 1px 1px 12px black;
+    box-shadow: 1px 1px 10px black;
 }
 
 .main-services .row .col p{
@@ -183,7 +183,6 @@
     .main-services .row .col p{
         text-align: center;
         width: 100px;
-        color: black;
     }
 }
 
