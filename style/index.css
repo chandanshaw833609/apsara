@@ -27,7 +27,7 @@
     box-shadow: 3px 5px 10px black;
 }
 #first{
-    padding: 0 2.5rem;
+    padding: 0 3rem;
     font-family: 'Tilt Prism', cursive;
     font-size: 2.5rem;
     color: var(--main_color);
@@ -70,7 +70,7 @@
     
     #first{
         font-family: 'Tilt Prism', cursive;
-        font-size: 2rem;
+        font-size: 3rem;
         color: black;
         text-align: center;
         font-weight: 900;
@@ -83,7 +83,7 @@
     }
     
     #third{
-        font-family: 'Tilt Prism', cursive;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 2rem;
         color: black;
         text-align: center;
@@ -94,7 +94,7 @@
         border-radius: 50px;
         background-color: rgb(163, 42, 99);
         color: white;
-        margin: 10px auto;
+        margin: 15px auto;
         font-size: 1.5rem;
     }
 }
