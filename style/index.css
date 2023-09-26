@@ -144,7 +144,6 @@
 }
 
 @media(max-width:500px){
-    
     .services h2{
         text-align: center;
         color: black;
@@ -176,12 +175,12 @@
         object-fit: cover;
         background-size: cover;
         height: 150px;
-        width: 150px;
+        width: 140px;
     }
     
     .main-services .row .col p{
         text-align: center;
-        width: 150px;
+        width: 140px;
         margin-top: 5px;
         font-size: 18px;
         font-weight: 700;
@@ -332,9 +331,9 @@
     font-family: 'Dancing Script', cursive;
 }
 .contact-details .details p{
-    padding: 5px;
+    padding: 10px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 .contact-details .map{
    width: 50%;
