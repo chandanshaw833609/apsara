@@ -39,6 +39,14 @@
             border: 1px solid black;
             font-size: 20px;
         }
+        input[type="date"]:before {
+  color: lightgrey;
+  content: attr(placeholder) !important;
+  margin-right: 0.5em;
+}
+input[type="date"]:focus:before {
+  content: '' !important;
+}
         button{
             background-image: linear-gradient(to right, rgba(170, 22, 22, 0.589), rgba(193, 47, 115, 0.87));
             width:210px;
@@ -57,7 +65,7 @@
         <form action="" method="post">
             <input type="name" name="name" id="name" placeholder="Enter your name">
             <input type="phone" name="phone" id="phone" placeholder="Enter your number">
-            <input type="date" placeholder="MY PLACEHOLDER" onchange="this.className=(this.value!=''?'has-value':'')">
+            <input type="date" name="date" id="date" placeholder="Choose Date">
             <select name="" id="">
                 <option value="chooseTime">Choose Time</option>
                 <option value="morning">Morning</option>
