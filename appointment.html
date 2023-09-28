@@ -11,22 +11,22 @@
             box-sizing: border-box;
         }
 
-        body{
-            background-image: url("https://images.unsplash.com/photo-1607774000480-de3f239fdd4c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=400&q=60");
+        .container{
+            background-image: linear-gradient(to right, rgba(170, 22, 22, 0.589), rgba(193, 47, 115, 0.87)),url("https://images.unsplash.com/photo-1579734204067-c337a611376c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            height: 100vh;
+            display: flex;
         }
 
         form{
-            
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             width: 80%;
             margin: auto;
-            height: 90vh;
         }
 
         input,select{
@@ -41,23 +41,25 @@
     </style>
 </head>
 <body>
-    <form action="" method="post">
-        <input type="name" name="name" id="name" placeholder="Enter your name">
-        <input type="phone" name="phone" id="phone" placeholder="Enter your number">
-        <input type="date" name="date" id="date" placeholder="Choose Date">
-        <select name="" id="">
-            <option value="">services</option>
-            <option value="haircut">Hair Cut</option>
-            <option value="manicure">Manicure</option>
-            <option value="Padicure">Padicure</option>
-            <option value="skinTreatment">Skin Treatment</option>
-            <option value="hairColour">Hair Colour</option>
-            <option value="hairSpa">Hair Spa</option>
-            <option value="hairTreatment">Hair Treatment</option>
-            <option value="threding">Threading</option>
-            <option value="bleach">Bleach</option>
-            <option value="waxing">Waxing</option>
-        </select>
-    </form>
+    <div class="container">
+        <form action="" method="post">
+            <input type="name" name="name" id="name" placeholder="Enter your name">
+            <input type="phone" name="phone" id="phone" placeholder="Enter your number">
+            <input type="date" name="date" id="date" placeholder="Choose Date">
+            <select name="" id="">
+                <option value="">services</option>
+                <option value="haircut">Hair Cut</option>
+                <option value="manicure">Manicure</option>
+                <option value="Padicure">Padicure</option>
+                <option value="skinTreatment">Skin Treatment</option>
+                <option value="hairColour">Hair Colour</option>
+                <option value="hairSpa">Hair Spa</option>
+                <option value="hairTreatment">Hair Treatment</option>
+                <option value="threding">Threading</option>
+                <option value="bleach">Bleach</option>
+                <option value="waxing">Waxing</option>
+            </select>
+        </form>
+    </div>
 </body>
 </html>
