@@ -39,14 +39,16 @@
             border: 1px solid black;
             font-size: 20px;
         }
+            
+        input[type=date] {
+        text-align: right;
+        }
+
         input[type="date"]:before {
-  color: lightgrey;
-  content: attr(placeholder) !important;
-  margin-right: 0.5em;
-}
-input[type="date"]:focus:before {
-  content: '' !important;
-}
+        color: lightgrey;
+        content: attr(placeholder) !important;
+        margin-right: 0.5em;
+        }
         button{
             background-image: linear-gradient(to right, rgba(170, 22, 22, 0.589), rgba(193, 47, 115, 0.87));
             width:210px;
