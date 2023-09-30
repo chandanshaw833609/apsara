@@ -9,11 +9,12 @@
 }
 
 :root{
-    --main_color : purple;
+    --main_color : black;
     --bold_color : rgb(165, 22, 165);
 }
 
 
+/* bakcround Starts from here */
 .background{
     height: 100vh; 
     width: 100%;
@@ -22,6 +23,7 @@
     background-position: center;
     object-fit: cover;
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
     box-shadow: 3px 5px 10px black;
@@ -42,20 +44,16 @@
 #third{
     padding: 0 1rem;
     font-family: 'Lobster Two', cursive;
-    font-size: .5rem;
+    font-size: 2.5rem;
     color: var(--main_color);
 }
 
 .background button{
-    width:120px;
-    padding: 10px;
     border-radius: 80px;
-    border-color: transparent;
     box-shadow: 2px 2px 10px white;
     color: white;
-    margin-left: 10rem;
-    margin-top: 20px;
-    font-size: 1rem;
+    margin: 20px ;
+    font-size: 1.5rem;
     font-family: 'Lobster Two', cursive;
     background: linear-gradient(to right, rgba(170, 22, 22, 0.589), rgba(193, 47, 115, 0.87));
 }
@@ -103,25 +101,28 @@
     }
 }
 
+/* Backgoround Ends Here */
 
 
 /* services starts here */
 
 .services{
-    margin: 15px;
+    margin: 15px auto;
     margin-top: 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 10px black;
     padding-top: 1px;
+    width: 80%;
 }
 
 .services h2{
     text-align: center;
     border-radius: 50px;
-    color: purple;
+    color: black;
     font-size: 45px;
-    padding-top: 20px;
+    padding: 20px;
     margin: 30px;
+    background: linear-gradient(to right, rgba(170, 22, 22, 0.589), rgba(193, 47, 115, 0.87));
     font-family: 'Dancing Script', cursive;
 }
 .main-services{
@@ -130,23 +131,38 @@
 }
 .main-services .row{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     border-radius: 20px;
+    margin: 20px;
+}
+
+.main-services .row .col{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 2px 2px 10px black;
+    background: linear-gradient(to right, rgba(170, 22, 22, 0.589), rgba(193, 47, 115, 0.87));
+
 }
 
 .main-services .row .col img{
     object-fit: cover;
     background-size: cover;
-    height: 150px;
-    width: 150px;
+    height: 350px;
+    width: 350px;
 }
 
 .main-services .row .col p{
+    font-size: 1.5rem;
     text-align: center;
     font-family: 'Lobster Two', cursive;
 }
 
 @media(max-width:500px){
+    .services{
+        width: 95%;
+    }
     .services h2{
         text-align: center;
         color: black;
@@ -196,120 +212,24 @@
 
 
 
-/* #features{
-    height: 100vh;
-    color: purple;
+.contact{
+    background: linear-gradient(to right, rgba(170, 22, 22, 0.589), rgba(193, 47, 115, 0.87));
+    box-shadow: 2px 2px 10px black;
+    width: 80%;
+    margin: 50px auto;
+    border-radius: 12px;
 }
 
-#features-heading{
-    height: 25%;
-    margin-bottom: 15px;
+.contact-heading{
+    background: linear-gradient(to right, rgba(170, 22, 22, 0.589), rgba(193, 47, 115, 0.87));
+    width: auto;
+    text-align: center;
     font-size: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 10px;
+    margin: 30px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
-
-.main-features{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    padding: 0px 100px;
-}
-
-.feature{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.features-image {
-    background-image: url("https://images.unsplash.com/photo-1589710751893-f9a6770ad71b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHNhbG9uJTIwc2hvcHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60");
-    object-fit: cover;
-    background-position: center;
-    background-size: cover;
-    border: 1px solid black;
-    box-shadow: 5px 10px 8px purple;
-}
-.feature-1{
-    display: flex;
-}
-.feature-1 .logo{
-    font-size: 40px;
-    margin: 13px 0px;
-    color: black;
-    padding: 5px;
-}
-
-.logo-feature{
-    padding: 15px;
-    color: black;
-}
-
-.row h2{
-    font-size: 35px;
-} */
-
-/* @media(max-width:500px) {
-    #features{
-        height: auto;
-        color: purple;
-    }
-    #features-heading{
-        height: 25%;
-        margin: 25px 0;
-        font-size: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .main-features{
-        display: flex;
-        flex-direction: column;
-        padding: 0px 20px;
-    }
-    
-    .feature{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .features-image {
-        background-image: url("https://images.unsplash.com/photo-1589710751893-f9a6770ad71b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHNhbG9uJTIwc2hvcHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60");
-        object-fit: cover;
-        height: 0vh;
-        background-position: center;
-        background-size: cover;
-        box-shadow: 5px 10px 8px purple;
-    }
-    .feature-1{
-        display: flex;
-    }
-    .feature-1 .logo{
-        font-size: 30px;
-        margin: 13px 0px;
-        color: black;
-        padding: 5px;
-    }
-    
-    .logo-feature{
-        padding: 15px;
-        color: black;
-    }
-    
-    .row h2{
-        font-size: 25px;
-    }
-} */
-
-
-
 
 .contact-details{
     display: flex;
@@ -319,9 +239,14 @@
     margin: 15px;
 }
 .contact-details .details{
-    width: 40%;
+    border-radius: 12px;
+    width: 50%;
+    height: 40vh;
     font-family: 'Solway', serif;
     border: 1px solid black;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 10px black;
 }
 
 .contact-details .details h2{
@@ -341,8 +266,12 @@
     font-size: 1.1rem;
 }
 .contact-details .map{
-   width: 50%;
-   height:70vh;
+   width: 40%;
+   height:40vh;border-radius: 12px;
+   border: 1px solid black;
+   padding: 10px;
+   background-color: white;
+   box-shadow: 2px 2px 10px black;
 }
 .contact-details .map iframe{
     width: 100%;
@@ -358,19 +287,23 @@
  
 @media(max-width:500px){
 
+    .contact{
+        width: 100%;
+        margin: auto;
+        background: white;
+    }
     .contact-details{
         flex-direction: column;
-        padding: 10px;
-        background: linear-gradient(to right, rgba(170, 22, 22, 0.589), rgba(193, 47, 115, 0.87));
-        border-radius: 10px;
-        box-shadow: 2px 2px 10px black;
-        margin: 15px;
-        margin-top: 20px;
+        padding: 10px 0px;
+    }
+    .contact-heading{
+        display: none;
     }
     .contact-details .details{
         width: 100%;
         border: none;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+        height: 35vh;
     }
     
     .contact-details .map{
@@ -378,3 +311,54 @@
         height: 40vh;
     }
 }
+
+
+.container{
+    background-image: linear-gradient(to right, rgba(170, 22, 22, 0.589), rgba(193, 47, 115, 0.87)),url("https://images.unsplash.com/photo-1579734204067-c337a611376c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+  }
+  
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+  }
+  
+  input,select{
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    border-radius: 50px;
+    margin: 5px;
+    border: 1px solid black;
+    font-size: 20px;
+  }
+  input[type=date] {
+    text-align: right;
+  }
+  
+  input[type="date"]:before {
+    color: black;
+    content: attr(placeholder) !important;
+    margin-right: 0.5em;
+  }
+    
+  button{
+    background-image: linear-gradient(to right, rgba(170, 22, 22, 0.589), rgba(193, 47, 115, 0.87));
+    width:210px;
+    height: 50px;
+    border-radius: 50px;
+    color: white;
+    margin: 15px auto;
+    font-size: 1.5rem;
+    box-shadow: 2px 2px 10px white;
+    outline: none;
+    border: none;
+  }
